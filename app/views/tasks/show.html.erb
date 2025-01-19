@@ -1,0 +1,14 @@
+<h1>Task Details</h1>
+<div class=container>
+<p>
+  <strong>Title:</strong><%=@task.title%>
+</p>
+<p>
+  <strong>Details:</strong><%=@task.title%>
+</p>
+<p>
+  <strong>Completed:</strong> <%= @task.completed ? "Yes" : "No" %>
+  </p>
+
+<%= link_to "Back to Task List", tasks_path%>
+</div>

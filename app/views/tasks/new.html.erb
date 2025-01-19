@@ -1,0 +1,24 @@
+<h1>New Task😎</h1>
+
+<%= form_with model: @task, local: true do |form| %>
+  <div>
+    <%= form.label :title, "Title" %><br>
+    <%= form.text_field :title, placeholder: "Enter task title" %>
+  </div>
+
+  <div>
+    <%= form.label :details, "Details" %><br>
+    <%= form.text_area :details, placeholder: "Enter task details" %>
+  </div>
+
+  <div>
+    <%= form.label :completed, "Completed" %><br>
+    <%= form.check_box :completed %>
+  </div>
+
+  <div>
+    <%= form.submit "Create Task" %>
+  </div>
+<% end %>
+
+<%= link_to "Back to Task List", tasks_path %>
